@@ -1,5 +1,5 @@
 :root {
-    --primary:#672bff;
+    --primary:#ff6b2b;
     --text-color:#232323;
     --surface:#fff;
     --text-color-light:#fff;
@@ -97,8 +97,26 @@ header {
     }
 }
 .section-banner {
-    padding: 4rem 0;
-    text-align: center;
+    position: relative;
+    .banner-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.6);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        h1 {
+            color: var(--text-color-light);
+            font-size: 4rem;
+            text-align: center;
+            text-transform: uppercase;
+            text-shadow: 4px 4px 2px var(--primary), 6px 6px 2px red;
+        }
+    }
 }
 footer {
     padding: 0.75rem 0;
